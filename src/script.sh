@@ -12,4 +12,6 @@ echo "#!/bin/bash" >> /output/${1}/unpack_${1}.sh
 echo "tar -xvf ${1}.tar.gz" >> /output/${1}/unpack_${1}.sh
 echo "rm ${1}.tar.gz" >> /output/${1}/unpack_${1}.sh
 echo 'bash -c "source bin/activate && conda-unpack"' >> /output/${1}/unpack_${1}.sh
+echo "touch ../activate-${1}" >> /output/${1}/unpack_${1}.sh
+echo echo 'source $PWD/bin/activate ">> ../activate-${1}" >> /output/${1}/unpack_${1}.sh
 chmod +x /output/${1}/unpack_${1}.sh
