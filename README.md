@@ -53,7 +53,7 @@ cd /abs-path-on-target-machine/environment-name
 This will untar the environment, clean the prefixes and create a shortcut to the activation script in the environment parent folder. Specifically, the path on target machine will appear as:
 
 ```
-├── /abs-path-on-target-machine/
+/abs-path-on-target-machine/
 ├── environment-name/ 
 └── activate-environment-name
 ```
